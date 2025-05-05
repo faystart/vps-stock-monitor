@@ -76,7 +76,7 @@ pip install aiohttp beautifulsoup4 python-telegram-bot
     ```
     ## 常驻后台运行
     ```bash
-    nohup python monitor.py &
+    nohup python3 monitor.py &
     ```
 
 
@@ -84,7 +84,7 @@ pip install aiohttp beautifulsoup4 python-telegram-bot
 默认是每分钟监控一次页面，如果发现有库存，会进行24小时冷却，需要等待24小时再进行监控，可以自己按需调整
 ```
     "check_interval": 60,
-    "cooldown_period": 86400
+    "cooldown_period": 43200
 ```
 
 ## 许可证
